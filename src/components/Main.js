@@ -23,15 +23,24 @@ const posts = [
   },
 ];
 
-class Main extends Component {
-  render() {
-    return (
-      <div>
-        <Title title={"Layzr"} />
-        <PostWall posts={posts} />
-      </div>
-    );
-  }
-}
+const Main = (props) => {
+  return (
+    <div>
+      <Title />
+      <PostWall posts={posts} />
+    </div>
+  );
+};
+
+// class Main extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <Title />
+//         <PostWall posts={posts} />
+//       </div>
+//     );
+//   }
+// }
 
 export default Main;
